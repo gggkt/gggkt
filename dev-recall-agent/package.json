@@ -1,0 +1,35 @@
+{
+  "name": "dev-recall-agent",
+  "version": "0.1.0",
+  "description": "A local CLI tool to recover development context for paused projects",
+  "main": "dist/index.js",
+  "bin": {
+    "dev-recall": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "cli",
+    "typescript",
+    "developer-tools",
+    "openai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "execa": "^9.3.0",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "openai": "^4.67.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.7.6",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
